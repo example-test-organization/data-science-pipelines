@@ -72,7 +72,7 @@ export class UIServer {
     }
     port = port || this.options.server.port;
     this.httpServer = this.app.listen(port, () => {
-      console.log('Server listening at http://localhost:' + port);
+      console.log('[Somechange] Server listening at http://localhost:' + port);
     });
     return this.httpServer;
   }
