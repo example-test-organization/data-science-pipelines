@@ -90,7 +90,7 @@ func (p *PersistenceAgent) Run(threadiness int, stopCh <-chan struct{}) error {
 	defer p.workflowWorker.Shutdown()
 
 	// Start the informer factories to begin populating the informer caches
-	log.Info("Starting The persistence agent")
+	log.Info("[Somechange] Starting The persistence agent")
 
 	// Wait for the caches to be synced before starting workers
 	log.Info("Waiting for informer caches to sync")
